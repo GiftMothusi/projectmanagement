@@ -17,7 +17,7 @@ class TaskFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            //Prepopulating our table with fake tasks
             "name"=> fake()->name(''),
             "description"=>fake()->realText(),
             "due_date" => fake()->dateTimeBetween('now',"+1 year"),

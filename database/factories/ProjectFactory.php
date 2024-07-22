@@ -17,7 +17,7 @@ class ProjectFactory extends Factory
     public function definition(): array
     {
         return [
-            //we create fake data
+            //we create fake data to prepopulate our table
             "name"=> fake()->name(''),
             "description"=>fake()->realText(),
             "due_date" => fake()->dateTimeBetween('now','+1 year'),
